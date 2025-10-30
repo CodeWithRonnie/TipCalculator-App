@@ -15,3 +15,14 @@ function fivePercent() {
     total.innerHTML = totalOfPerson.toFixed(2);
 
 }
+
+function tenPercent(){
+    let bill = parseFloat(billInput.value) || 0;
+    let numberOfPeople = parseFloat(numberOfPeopleInput.value) || 1;
+
+    let tipPerPerson = (bill * 0.10) / numberOfPeople;
+    let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
+
+    tip.innerHTML = tipPerPerson.toFixed(2);
+    total.innerHTML = totalOfPerson.toFixed(2);
+}
