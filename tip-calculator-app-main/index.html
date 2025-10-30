@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+
+  <img src="images/logo.svg" alt="logo">
+  <section id="container">
+    <div class="left-container">
+      <div class="left-items">
+        <h3>
+          Bill
+        </h3>
+        <input class="input" type="text" placeholder="$" />
+      </div>
+      <div class="left-items">
+        <h3>Select Tip %</h3>
+        <button class="percentage-btn" onclick="fivePercent()">5%</button>
+        <button class="percentage-btn">10%</button>
+        <button class="percentage-btn">15%</button>
+        <button class="percentage-btn">25%</button>
+        <button class="percentage-btn">50%</button>
+        <button class="percentage-btn">Custom</button>
+      </div>
+      <div class="left-items">
+        <h3>
+          Number of People
+        </h3>
+        <input class="number-of-people" type="number" placeholder="0" />
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="right-items">
+           <div><h4>Tip Amount</h4>
+        <h5>/ person</h5></div>
+        <div class="amount tipAmount"><h3>$0.00</h3></div>
+      </div>
+      <div class="right-items">
+        <div>
+          <h3>Total</h3>
+        <h4>/ person</h4>
+      </div>
+        
+        <div class="amount total"><h3>$0.00</h3></div>
+        
+      </div>
+      <button class="reset-button">RESET</button>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
