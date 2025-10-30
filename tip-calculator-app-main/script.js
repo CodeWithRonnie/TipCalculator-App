@@ -11,8 +11,8 @@ function fivePercent() {
     let tipPerPerson = (bill * 0.05) / numberOfPeople;
     let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
 
-    tip.innerHTML = tipPerPerson.toFixed(2);
-    total.innerHTML = totalOfPerson.toFixed(2);
+    tip.innerHTML = "$ " + tipPerPerson.toFixed(2);
+    total.innerHTML = "$ " + totalOfPerson.toFixed(2);
 
 }
 
@@ -23,16 +23,16 @@ function tenPercent(){
     let tipPerPerson = (bill * 0.10) / numberOfPeople;
     let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
 
-    tip.innerHTML = tipPerPerson.toFixed(2);
-    total.innerHTML = totalOfPerson.toFixed(2);
+    tip.innerHTML = "$ " + tipPerPerson.toFixed(2);
+    total.innerHTML = "$ " + totalOfPerson.toFixed(2);
 }
 
 function fifteenPercent(){
     let bill = parseFloat(billInput.value) || 0;
     let numberOfPeople = parseFloat(numberOfPeopleInput.value) || 1;
 
-    let tipPerPerson = (bill * 0.15) / numberOfPeople;
-    let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
+    let tipPerPerson = "$ " + (bill * 0.15) / numberOfPeople;
+    let totalOfPerson = "$ " + (bill / numberOfPeople) + tipPerPerson;
 
     tip.innerHTML = tipPerPerson.toFixed(2);
     total.innerHTML = totalOfPerson.toFixed(2);
@@ -45,8 +45,8 @@ function twentyFivePercent(){
     let tipPerPerson = (bill * 0.25) / numberOfPeople;
     let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
 
-    tip.innerHTML = tipPerPerson.toFixed(2);
-    total.innerHTML = totalOfPerson.toFixed(2);
+    tip.innerHTML = "$ " + tipPerPerson.toFixed(2);
+    total.innerHTML = "$ " + totalOfPerson.toFixed(2);
 }
 
 function fiftyPercent(){
@@ -56,6 +56,6 @@ function fiftyPercent(){
     let tipPerPerson = (bill * 0.50) / numberOfPeople;
     let totalOfPerson = (bill / numberOfPeople) + tipPerPerson;
 
-    tip.innerHTML = tipPerPerson.toFixed(2);
-    total.innerHTML = totalOfPerson.toFixed(2);
+    tip.innerHTML = "$ " + tipPerPerson.toFixed(2);
+    total.innerHTML = "$ " + totalOfPerson.toFixed(2);
 }
